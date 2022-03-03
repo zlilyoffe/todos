@@ -1,0 +1,217 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+main{
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+}
+h1 {
+    font-size: 3.5em;
+    font-family:monospace;
+    text-transform: lowercase;
+    text-align: center;
+    color: rgb(175, 158, 171);
+}
+:checked + label {
+    text-decoration: line-through;
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid;
+    vertical-align: middle;
+    color: rgb(175, 158, 171);
+    padding: 0.7em;
+    margin-right: 3em;
+    margin-left: 1em;
+}
+input[type='checkbox']:checked{
+    background-color: rgb(175, 158, 171);
+}
+input[type='checkbox']:focus {
+    outline: none;
+}
+/* input[type='checkbox']:disabled {
+} */
+
+input[type="text"] {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    box-shadow: black;
+    background-color: white;
+}
+.item{
+    padding-top: 0.7em;
+    color: rgb(175, 158, 171);
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #eee;
+    background-color: rgb(236, 232, 232)
+    padding: 1em;
+    padding-left: 0.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.inputBlock{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+.itemAngle{
+    color: rgb(221, 18, 18);
+    padding: 1.5em;
+}
+.new-tolist{
+    color: rgb(105, 20, 85);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.4em;
+    background-color:rgba(202, 196, 201, 0.767)
+}
+.new-tolist:focus {
+    outline: none;
+  }
+.new-tolist::placeholder{
+    font-style: italic;
+    color:rgb(175, 158, 171);
+} 
+.footer {
+    color:rgb(175, 158, 171);;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    max-width: 60%;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 4px;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+a {
+    text-decoration: none;
+    color: rgb(175, 158, 171);
+}
+.Item-remove{
+    font-size: inherit;
+    font-family: inherit;
+    color: rgb(175, 158, 171);
+    background-color: transparent;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    position: absolute;
+    display: none;
+}
+.menu-bottom li:not(:last-child) {
+    margin-right: 1em;
+} 
+.flex-alignSelf--right {
+    margin-left: auto;
+}
+.item:hover .Item-remove {
+    display: block;
+    right: 0.5em;
+    font-size: 1.5em;
+}
+.Item-remove:focus{
+    outline: none;
+}
+.Item-remove:hover {
+    filter: saturate(6);
+}
+.status:target{
+    color: rgb(136, 122, 133);
+}
+.status:hover{
+    border-color:rgb(175, 158, 171);
+}
+.status{
+    border-radius: 0.2em;
+    padding: 0.3em;
+    border: 1px solid transparent;
+}
+.hide{
+    display: none;
+}
+
+/*.new-tolist, .edit {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    border: 0;
+    color: inherit;
+    padding: 6px;
+    border: 1px solid #999;
+    box-shadow: inset 0 -1px 5px 0 rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+} */
+
+
+/*
+    <footer class="footer">
+        <span class="counter">items left</span>
+        <ul class="menu-bottom">
+            <li>
+                <a id="all" href="#all" class="status">All</a>
+            </li>
+            <li>
+                <a id="Active" href="#Active" class="status">Active</a>
+            </li>
+            <li>
+                <a id="completed" href="#completed" class="status">Completed</a>
+            </li>
+        </ul>
+        <span>
+        <a id="clearCompleted" href="#ClearButton" class="clear">Clear completed</a>
+        </span>
+    </footer>
+    */
+
+    @media (prefers-color-scheme: dark) {
+        h1 {
+            color: white;
+            padding-top: 0.5em;
+        }
+        
+        input[type='checkbox']:checked{
+            background-color: white;
+        }
+
+        .container{
+            box-shadow: white;
+            background-color: gray;
+        }
+    }

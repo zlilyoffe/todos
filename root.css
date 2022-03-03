@@ -1,0 +1,52 @@
+:root{
+    --shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    --space: 1em;
+
+}
+
+/*
+<div class="List-container"> 
+<ul class="list">
+    <li class="item">
+        <input type="checkbox" name id="id-1">
+        <label for="id-1" contenteditable>cook</label>
+        <button class="Item-remove" aria-label="Remove">&times;</button>
+    </li>
+    <li class="item">
+     <input type="checkbox" name id="id-2">
+     <label for="id-2" contenteditable>H.W</label>
+     <button class="Item-remove" aria-label="Remove">&times;</button>
+     </li>
+     <li class="item">
+        <input type="checkbox" name id="id-3">
+        <label for="id-3" contenteditable>sport</label>
+        <button class="Item-remove flex-alignSelf--right" aria-label="Remove">&times;</button>
+    </li>
+</ul>
+</div> 
+
+
+
+<h1>Todos</h1>
+<main>
+  <header>
+    <input data-component="Input" class="TodoInput Item" type="text" placeholder="What needs to be done?">
+    <input class="TodoInput Item" type="text" placeholder="What needs to be done?">
+  </header>
+  <div data-component="List"></div>
+  <div class="ListContainer"></div>
+  <footer class="Item Item--full flex flex-justify--between text-small">
+    <span>2 items left</span>
+    <ul class="flex flex-gapRight--small">
+      <li><a class="Tab" id="all" href="#all">All</a></li>
+      <li><a class="Tab" id="active" href="#active">Active</a></li>
+      <li><a class="Tab" id="completed" href="#completed">Completed</a></li>
+    </ul>
+    <button class="text-decoration:hover">Clear completed</button>
+  </footer>
+</main>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
+/*
